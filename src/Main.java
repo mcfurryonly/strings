@@ -7,18 +7,11 @@ public class Main {
 
 
         String fullName = firstName + " " + middleName + " " + lastName;
-        fullName = fullName.replace("i", "I");
-        fullName = fullName.replace("v", "V");
-        fullName = fullName.replace("a", "A");
-        fullName = fullName.replace("n", "N");
-        fullName = fullName.replace("o", "O");
-        fullName = fullName.replace("c", "C");
-        fullName = fullName.replace("h", "H");
-        System.out.println("Данные ФИО сотрудника для заполнения отчета - " + fullName);
+        String upperFullName = fullName.toUpperCase();
+        System.out.println("Данные ФИО сотрудника для заполнения отчета - " + upperFullName);
 
         String fillName = " Иванов Семён Семёнович";
         fillName = fillName.replace("ё", "е");
         System.out.println("Данные ФИО сотрудника -" + fillName);
-
     }
 }
